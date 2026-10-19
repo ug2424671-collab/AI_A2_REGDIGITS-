@@ -7,10 +7,15 @@
 - Tool used: Claude (Anthropic) was used to generate an initial draft of the project structure and
   code (modules under `src/`, `run_all.py`, `predict.py`, `app.py`, tests).
 - Additional assistance: Copilot was used to inspect the existing project, run its test suite,
-  and update the student-provided identity and repository details. No application code was changed
+  update student-provided identity and repository details, regenerate the pipeline artifacts,
+  and prepare the results report and demonstration checklist. No application code was changed
   during this assistance.
-- What I changed / verified myself: <e.g. ran every command on my machine, read and understood each
-  module, changed ..., fixed ...>
-- What I wrote myself: <report interpretations of one regression error, one classification error and
-  one cluster; video; declaration>
-- I can explain and modify any part of the code during the defense: <yes/no>
+- Verification performed with Copilot: the full test suite passed (21 tests); the valid prediction
+  example returned a prediction; the invalid example displayed validation errors with exit code 2;
+  and the pipeline recreated the expected dataset fingerprint. I must review these results myself.
+- What I changed / verified myself (student to complete truthfully): <describe your own changes
+  and what you personally ran, read, and verified>
+- My own interpretation of one regression result, one classification result, and one cluster
+  (student to complete in your own words after reviewing `docs/RESULTS_REPORT.md`):
+  <write your explanation here>
+- I can explain and modify the submitted work during the defense (student to confirm): <yes/no>
