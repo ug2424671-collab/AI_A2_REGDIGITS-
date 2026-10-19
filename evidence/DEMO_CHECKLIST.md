@@ -42,12 +42,12 @@ so navigation is quick.
 Start the service before the recording, then open `http://127.0.0.1:8000/docs`:
 
 ```bash
-.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8000
+.venv/bin/uvicorn app:app --host 127.0.0.1 --port 18765
 ```
 
-In `/docs`, use **Try it out** for `/health` and `/predict`. For a valid body, paste the JSON in
-`samples/valid.json`. For a validation error, use the same body but set `rainfall_mm` to `5000`.
-Show the error response, then finish with the test run.
+Open `http://127.0.0.1:18765/docs`. In `/docs`, use **Try it out** for `/health` and `/predict`.
+For a valid body, paste the JSON in `samples/valid.json`. For a validation error, use the same
+body but set `rainfall_mm` to `5000`. Show the error response, then finish with the test run.
 
 ## Verified in this workspace
 
@@ -56,5 +56,7 @@ Show the error response, then finish with the test run.
 - The test suite passed: 21 tests.
 - The valid CLI example returned a prediction.
 - The invalid CLI example displayed field validation errors and returned exit code 2.
+- On the dedicated API test port, `/health` and valid `/predict` returned HTTP 200; invalid
+  `/predict` returned HTTP 422. Port 8000 was already occupied, so the checklist uses port 18765.
 - The project has not been confirmed pushed to GitHub; verify the repository state before claiming
   that it is online.
