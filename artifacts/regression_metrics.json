@@ -1,0 +1,33 @@
+{
+  "baseline": {
+    "mean_baseline": {
+      "mae": 2.230595366795367,
+      "rmse": 2.666945382901887,
+      "r2": -0.07609702808268937,
+      "cv_rmse_train": 2.6745247750418075
+    }
+  },
+  "candidates": {
+    "ridge": {
+      "mae": 0.7149708461104601,
+      "rmse": 0.9182682983066494,
+      "r2": 0.8724259417546557,
+      "cv_rmse_train": 0.9268294399009532
+    },
+    "random_forest": {
+      "mae": 1.0518322083333316,
+      "rmse": 1.3383483665337386,
+      "r2": 0.7290048396948621,
+      "cv_rmse_train": 1.2980605145987703
+    },
+    "gradient_boosting": {
+      "mae": 0.9643794120460193,
+      "rmse": 1.2399153176352506,
+      "r2": 0.7674013236754333,
+      "cv_rmse_train": 1.15732329250703
+    }
+  },
+  "selected_model": "ridge",
+  "selection_reason": "ridge has the lowest 5-fold cross-validated RMSE on the training set (0.9268 tons); the test set was not used for selection.",
+  "verification_code": "AI-A2-4671"
+}

@@ -1,0 +1,27 @@
+{
+  "verification_code": "AI-A2-4671",
+  "raw": {
+    "rows": 281,
+    "missing_values": {
+      "soil_moisture_pct": 14,
+      "fertilizer_kg": 14
+    },
+    "duplicate_rows": 3,
+    "range_violations": 0
+  },
+  "cleaning": {
+    "rows_before": 281,
+    "rows_after": 278,
+    "duplicates_removed": 3
+  },
+  "leakage_check": "passed: yield_tons, yield_per_ha and high_risk are not features",
+  "features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "cooperative_support",
+    "season"
+  ]
+}

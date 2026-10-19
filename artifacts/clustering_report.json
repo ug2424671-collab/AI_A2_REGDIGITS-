@@ -1,0 +1,46 @@
+{
+  "silhouette_by_k": {
+    "2": 0.15975054297394495,
+    "3": 0.1329123471370872,
+    "4": 0.14008037491098801,
+    "5": 0.14224059129366948,
+    "6": 0.14307875348095786
+  },
+  "selected_k": 2,
+  "selection_reason": "K=2 has the highest silhouette score (0.1598) among K=2..6.",
+  "profiles": {
+    "0": {
+      "size_train": 100,
+      "mean_numeric_inputs": {
+        "rainfall_mm": 990.071,
+        "avg_temp_c": 18.813,
+        "soil_moisture_pct": 51.711,
+        "fertilizer_kg": 127.172,
+        "field_size_ha": 2.091
+      },
+      "share_season_A": 0.63,
+      "share_cooperative_support": 1.0,
+      "description": "mostly supported by the cooperative",
+      "posthoc_mean_yield_tons": 12.362,
+      "posthoc_high_risk_rate": 0.45
+    },
+    "1": {
+      "size_train": 122,
+      "mean_numeric_inputs": {
+        "rainfall_mm": 1001.44,
+        "avg_temp_c": 18.154,
+        "soil_moisture_pct": 48.141,
+        "fertilizer_kg": 125.82,
+        "field_size_ha": 2.136
+      },
+      "share_season_A": 0.467,
+      "share_cooperative_support": 0.0,
+      "description": "mostly without cooperative support",
+      "posthoc_mean_yield_tons": 11.547,
+      "posthoc_high_risk_rate": 0.541
+    }
+  },
+  "note_on_targets": "Clusters were fitted on input features only. The 'posthoc_*' fields describe each cluster afterwards and were not used to fit.",
+  "interpretation": "Silhouette values are modest because the synthetic inputs are independent uniform draws, so farms form no strongly separated natural groups. The clusters are therefore soft groupings of similar growing conditions that a field officer can use to plan visits, not hard categories.",
+  "verification_code": "AI-A2-4671"
+}
